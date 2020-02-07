@@ -1,5 +1,6 @@
 const img = document.createElement('img')
-img.innerText = 'hello from timo'
+const imgURL = chrome.runtime.getURL("animations/timo-fast.gif");
+img.src = imgURL
 document.body.appendChild(img)
 
 var port = chrome.runtime.connect();
