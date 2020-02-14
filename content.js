@@ -11,10 +11,17 @@ class Timo {
 
 	show() {
 		const path = chrome.extension.getURL("Animations/timo-slow.gif");
-		const img = document.createElement("img");
+		const img = new Image()
 		img.src = path;
-		img.classList.add("timo");
-		document.body.appendChild(img);
+		// img.classList.add("timo");
+		// document.body.appendChild(img);
+		
+		const canvas = document.createElement("canvas");
+		canvas.classList.add("c");
+		document.body.appendChild(canvas);
+		const ctx = canvas.getContext("2d");
+		img.onload = ctx.drawImage(img, 0, 0);
+		
 	}
 
 	getXY(element) {
@@ -27,4 +34,4 @@ class Timo {
 
 const timo = new Timo();
 timo.show();
-timo.getXY(document.querySelector('.timo'))
+timo.getXY(document.querySelector(".timo"));
