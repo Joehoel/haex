@@ -1,0 +1,7 @@
+.timo {
+    z-index:  10000000;
+    width: 200px;
+    position: fixed;
+    /* right: 0;
+    top: 50%; */
+}
