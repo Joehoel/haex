@@ -5,8 +5,6 @@
 //================================//
 class Timo {
 	constructor() {
-		this.x = "";
-		this.y = "";
 	}
 
 	show() {
