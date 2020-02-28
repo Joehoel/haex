@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p id="randomMessage"></p>
+	<button id="loadtimo" style="width: 200px; background-color: orange;">Load Timo into your browser</button>
+
+	<script type="text/javascript">
+		const messages = ['Timo wants to hug you', 'Play with me!', 'Also try Terraria', 'Pls kill me'];
+		const randomIndex = Math.round(Math.random(messages.length-1));
+		document.getElementById("randomMessage").innerHTML = messages[randomIndex];
+	</script>
+	
+</body>
+</html>
