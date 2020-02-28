@@ -15,5 +15,6 @@
       "js": ["content.js"]
     }
   ],
-  "web_accessible_resources": ["Animations/*"]
+  "web_accessible_resources": ["Animations/*"],
+  "permissions": ["activeTab"],
 }

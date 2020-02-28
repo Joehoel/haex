@@ -1,0 +1,1 @@
+src=chrome.extension.getURL('logo.png');
