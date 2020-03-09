@@ -1,5 +1,6 @@
 // Werkt niet op alle sites
 // Het werkt wel op https://developer.chrome.com/home
+import GIF from "./gif";
 
 class Timo {
   constructor() {
@@ -12,12 +13,17 @@ class Timo {
 
     this.ctx = this.createContext();
 
+    this.x = this.canvas.width;
+    this.y = 0;
+
     this.draw();
+    // this.move();
   }
 
   draw() {
     window.onload = () => {
       this.ctx.drawImage(this.img, 0, 0);
+      // requestAnimationFrame(this.move);
     };
   }
 
@@ -29,9 +35,11 @@ class Timo {
   }
 
   move() {
-    // TODO: Laat timo bewegen
+    // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); // clear canvas
+    // this.ctx.drawImage(this.img, this.x, this.y); // draw image at current position
+    // this.x -= 4;
+    // if (this.x > 250) requestAnimationFrame(this.move); // loop
   }
 }
 
 const timo = new Timo();
-// timo.getXY(document.querySelector(".timo"));
