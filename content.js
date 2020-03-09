@@ -1,6 +1,7 @@
 class Timo {
   constructor() {
-    this.ctx = this.createCanvas();
+    // this.ctx = this.createCanvas();
+    this.show();
   }
 
   show() {
@@ -11,9 +12,9 @@ class Timo {
     document.body.appendChild(img);
 
     // ! Werkt niet
-    window.onload = () => {
-      this.ctx.drawImage(img, 100, 100);
-    };
+    // window.onload = () => {
+    //   this.ctx.drawImage(img, 100, 100);
+    // };
   }
 
   createCanvas() {
@@ -30,5 +31,5 @@ class Timo {
 }
 
 const timo = new Timo();
-timo.show();
+
 // timo.getXY(document.querySelector(".timo"));
