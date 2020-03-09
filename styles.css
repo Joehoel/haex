@@ -1,20 +1,16 @@
 .timo {
-	/* width: 100px;
-	height: auto; */
-    /* position: absolute; */
-	/* display: none; */
+  width: 100px;
+  height: auto;
+  position: absolute;
+  /* display: none; */
+  z-index: 900;
 }
 
 canvas.c {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  width: 100vw;
+  height: 100vh;
 
-	width: 100vw;
-	height: 100vh;
-
-	position: absolute;
-	z-index: 999;
-	pointer-events: none;
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
 }

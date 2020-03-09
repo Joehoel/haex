@@ -1,27 +1,34 @@
+// Werkt niet op alle sites
+// Het werkt wel op https://developer.chrome.com/home
+
 class Timo {
   constructor() {
+    this.canvas = document.createElement("canvas");
+    this.img = document.createElement("img");
+    this.canvas.width = this.img.width;
+    this.canvas.height = this.img.height;
+
     this.ctx = this.createCanvas();
+    this.path = chrome.extension.getURL("Animations/timo-slow.gif");
+    this.img.src = this.path;
+
+    this.show();
   }
 
   show() {
-    const path = chrome.extension.getURL("Animations/timo-slow.gif");
-    const img = document.createElement("img");
-    img.src = path;
-    img.classList.add("timo");
-    document.body.appendChild(img);
+    // img.classList.add("timo");
+    // document.body.appendChild(img);
 
-    // ! Werkt niet
     window.onload = () => {
-      this.ctx.drawImage(img, 100, 100);
+      this.ctx.drawImage(this.img, 0, 0);
     };
   }
 
   createCanvas() {
-    const canvas = document.createElement("canvas");
-    canvas.classList.add("c");
+    this.canvas.classList.add("c");
 
-    document.body.appendChild(canvas);
-    return canvas.getContext("2d");
+    document.body.appendChild(this.canvas);
+    return this.canvas.getContext("2d");
   }
 
   move() {
@@ -30,5 +37,4 @@ class Timo {
 }
 
 const timo = new Timo();
-timo.show();
 // timo.getXY(document.querySelector(".timo"));
