@@ -1,8 +1,18 @@
+const loadTimoBtn = document.getElementById("loadtimo");
+const randomMessageEl = document.getElementById("randomMessage");
+
 const messages = [
   "Timo wants to hug you",
   "Play with me!",
   "Also try Terraria",
   "Pls kill me"
 ];
-const randomIndex = Math.round(Math.random(messages.length - 1));
-document.getElementById("randomMessage").innerHTML = messages[randomIndex];
+
+function randomMessage(messages) {
+  with (Math) return messages[floor(random() * messages.length)];
+}
+
+loadTimoBtn.addEventListener("click", () => {
+  randomMessageEl.textContent = "";
+  randomMessageEl.textContent = randomMessage(messages);
+});

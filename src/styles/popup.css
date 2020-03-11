@@ -1,4 +1,8 @@
 #loadtimo {
-  width: 200px;
+  width: 300px;
   background-color: orange;
+  border-radius: 20px;
+  border: none;
+  padding: 0.7rem;
+  font-weight: 600;
 }
