@@ -1,8 +1,8 @@
 {
-  "name": "Timo",
+  "name": "Heax",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Timo de vis",
+  "description": "It will take over your browser",
   "options_page": "options.html",
   "browser_action": {
     "default_popup": "popup.html",
