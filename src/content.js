@@ -1,15 +1,15 @@
 class Timo {
   constructor() {
-    // this.ctx = this.createCanvas();
+    this.path = chrome.extension.getURL("Animations/timo-slow.gif");
+    this.img = document.createElement("img");
+    this.img.src = this.path;
+    this.img.classList.add("timo");
+
     this.show();
   }
 
   show() {
-    const path = chrome.extension.getURL("Animations/timo-slow.gif");
-    const img = document.createElement("img");
-    img.src = path;
-    img.classList.add("timo");
-    document.body.appendChild(img);
+    document.body.appendChild(this.img);
 
     // ! Werkt niet
     // window.onload = () => {
@@ -17,7 +17,7 @@ class Timo {
     // };
   }
 
-  createCanvas() {
+  createContext() {
     const canvas = document.createElement("canvas");
     canvas.classList.add("c");
 
@@ -29,7 +29,4 @@ class Timo {
     // TODO: Laat timo bewegen
   }
 }
-
 const timo = new Timo();
-
-// timo.getXY(document.querySelector(".timo"));

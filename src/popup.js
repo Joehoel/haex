@@ -9,7 +9,7 @@ const messages = [
 ];
 
 function randomMessage(messages) {
-  with (Math) return messages[floor(random() * messages.length)];
+  return messages[Math.floor(Math.random() * messages.length)];
 }
 
 loadTimoBtn.addEventListener("click", () => {
