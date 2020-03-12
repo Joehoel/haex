@@ -18,5 +18,5 @@
       "js": ["src/content.js"]
     }
   ],
-  "web_accessible_resources": [""]
+  "web_accessible_resources": ["./src/assets/*"]
 }
