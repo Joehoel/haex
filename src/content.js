@@ -1,13 +1,11 @@
 replaceAll(document.body);
+
 function replaceAll(element) {
   if (element.hasChildNodes()) {
     element.childNodes.forEach(replaceAll);
   } else if (element.nodeType === Text.TEXT_NODE) {
     replace(element, "corona", "fruit");
     replace(element, "COVID-19", "FROVID-21");
-  } else if (element.tagName == "IMG") {
-    // element.src = chrome.runtime.getURL("./assets/yeah.jpg");
-    // console.log(element.src);
   }
 }
 
@@ -19,12 +17,12 @@ function replace(element, regex, replace) {
   }
 }
 
-const images = document.querySelectorAll("img");
+// const images = document.querySelectorAll("img");
 
-const file = "./assets/giphy.gif";
-const url = chrome.extension.getURL(file);
-console.log(url);
-images.forEach((image) => {
-  console.log(image.src);
-  image.src = url;
-});
+// const file = "src/assets/yeah.png";
+// const url = chrome.runtime.getURL(file);
+// images.forEach((image) => {
+//   console.log(image.src);
+//   image.src = url;
+//   console.log(url);
+// });
