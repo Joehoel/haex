@@ -1,18 +1,16 @@
-const loadTimoBtn = document.getElementById("loadtimo");
-const randomMessageEl = document.getElementById("randomMessage");
+const loadHaexBtn = document.getElementById("loadhaex");
+const siteName = document.getElementById('siteName')
 
-const messages = [
-  "Timo wants to hug you",
-  "Play with me!",
-  "Also try Terraria",
-  "Pls kill me"
-];
 
-function randomMessage(messages) {
-  return messages[Math.floor(Math.random() * messages.length)];
+function cleanUrl(url) {
+  let clean = url.split('/')[2]
+  if (clean.includes("www.")) {
+    clean = clean.substr(4)
+  }
+  return clean
 }
 
-loadTimoBtn.addEventListener("click", () => {
-  randomMessageEl.textContent = "";
-  randomMessageEl.textContent = randomMessage(messages);
+chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, (tabs) => {
+    const url = tabs[0].url;
+    siteName.innerHTML =  cleanUrl(url)
 });

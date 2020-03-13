@@ -6,7 +6,10 @@ function replaceAll(element) {
   } else if (element.nodeType === Text.TEXT_NODE) {
     replace(element, "corona", "fruit");
     replace(element, "COVID-19", "FROVID-21");
+<<<<<<< HEAD
   } else if (element.tagName == "IMG") {
+=======
+>>>>>>> 56c9af3705449807b9d0228dfca7185383659e30
   }
 }
 
@@ -18,12 +21,12 @@ function replace(element, regex, replace) {
   }
 }
 
-const images = document.querySelectorAll("img");
+// const images = document.querySelectorAll("img");
 
-const file = "./assets/giphy.gif";
-const url = chrome.extension.getURL(file);
-console.log(url);
-images.forEach((image) => {
-  console.log(image.src);
-  image.src = url;
-});
+// const file = "src/assets/yeah.png";
+// const url = chrome.runtime.getURL(file);
+// images.forEach((image) => {
+//   console.log(image.src);
+//   image.src = url;
+//   console.log(url);
+// });
