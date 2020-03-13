@@ -6,10 +6,7 @@ function replaceAll(element) {
   } else if (element.nodeType === Text.TEXT_NODE) {
     replace(element, "corona", "fruit");
     replace(element, "COVID-19", "FROVID-21");
-<<<<<<< HEAD
   } else if (element.tagName == "IMG") {
-=======
->>>>>>> 56c9af3705449807b9d0228dfca7185383659e30
   }
 }
 
