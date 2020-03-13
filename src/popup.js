@@ -1,18 +1,6 @@
-const loadTimoBtn = document.getElementById("loadtimo");
-const randomMessageEl = document.getElementById("randomMessage");
+const loadHaexBtn = document.getElementById("loadhaex");
 
-const messages = [
-  "Timo wants to hug you",
-  "Play with me!",
-  "Also try Terraria",
-  "Pls kill me"
-];
-
-function randomMessage(messages) {
-  return messages[Math.floor(Math.random() * messages.length)];
+function GetSiteName(){
+  var SiteName = document.getElementById('ctl00_PlaceHolderSiteName_onetidProjectPropertyTitle').innerHTML;
+document.getElementById('siteName').innerHTML = SiteName;
 }
-
-loadTimoBtn.addEventListener("click", () => {
-  randomMessageEl.textContent = "";
-  randomMessageEl.textContent = randomMessage(messages);
-});
