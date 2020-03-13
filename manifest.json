@@ -8,15 +8,28 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["src/background.js"],
+    "scripts": [
+      "src/background.js"
+    ],
     "persistent": false
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "css": ["src/styles/styles.css"],
-      "js": ["src/content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "src/styles/styles.css"
+      ],
+      "js": [
+        "src/content.js"
+      ]
     }
   ],
-  "web_accessible_resources": ["src/assets/"]
+  "web_accessible_resources": [
+    "src/assets/"
+  ],
+  "permissions": [
+    "tabs"
+  ]
 }
