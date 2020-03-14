@@ -1,3 +1,11 @@
+body {
+	width: 200px;
+	background-color: #303030;
+}
+
 #loadhaex{
-  width: 100px;
+	color: #FFFFFF;
+	background-color: #424242;
+	border: 1px solid #03DAC6;
+	border-radius: 10px;
 }
