@@ -3,6 +3,10 @@ const siteName = document.getElementById("siteName");
 
 function cleanUrl(url) {
   let clean = url.split("/")[2];
+  if(clean.length > 14) {
+    clean = clean.substr(0,14);
+    clean += '...';
+  }
   return clean;
 }
 
@@ -14,7 +18,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
 
 function loadingheax() {
   chrome.tabs.executeScript({
-    file: 'starthack.js'
+    file: 'src/starthack.js'
   }); 
 }
 

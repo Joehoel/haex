@@ -15,9 +15,9 @@
     {
       "matches": ["<all_urls>"],
       "css": ["src/styles/styles.css"],
-      "js": ["src/content.js"]
+      "js": ["src/content.js", "src/starthack.js"]
     }
   ],
   "web_accessible_resources": ["src/assets/"],
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "activeTab", "fontSettings"]
 }
