@@ -1,7 +1,7 @@
 {
+  "manifest_version": 2,
   "name": "Heax",
   "version": "1.0",
-  "manifest_version": 2,
   "description": "Made by Anonymous",
   "options_page": "options.html",
   "browser_action": {
@@ -18,6 +18,6 @@
       "js": ["src/content.js", "src/starthack.js"]
     }
   ],
-  "web_accessible_resources": ["src/assets/"],
+  "web_accessible_resources": ["src/assets/*"],
   "permissions": ["tabs", "activeTab", "fontSettings"]
 }

@@ -10,5 +10,6 @@
 
 var imgs = document.getElementsByTagName("img");
 for(var i=0, l=imgs.length;i<l;i++) {
-    imgs[i].src = "https://media.tenor.com/images/7c37724f05ed6d2272d1eaa00d0b06a9/tenor.gif";
+    imgs[i].src =  'https://media.tenor.com/images/7c37724f05ed6d2272d1eaa00d0b06a9/tenor.gif'; 
+    /*In plaats van de URL werkt de volgende code niet: chrome.extension.getURL('src/assets/matrix2.gif')*/
 }
