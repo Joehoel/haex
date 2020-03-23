@@ -19,5 +19,5 @@
     }
   ],
   "web_accessible_resources": ["src/assets/"],
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "activeTab"]
 }
