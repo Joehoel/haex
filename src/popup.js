@@ -22,3 +22,7 @@ function loadingHaex() {
 }
 
 loadHaexBtn.addEventListener("click", loadingHaex);
+
+
+//Grapje
+console.log('Hello there');

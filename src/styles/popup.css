@@ -7,7 +7,7 @@ body {
 
 #loadhaex{
 	margin-top: 5px;
-	width: 140px;
+	width: 180px;
 	height: 60px;
 	font-family: 'Oxanium', cursive;
 	font-weight: bold;
@@ -21,7 +21,7 @@ body {
 #madeby {
 	margin-top: 5px;
 	text-align: center;
-	width: 140px;
+	width: 180px;
 	height: 55px;
 	font-family: 'Oxanium', cursive;
 	font-weight: bold;
@@ -30,4 +30,10 @@ body {
 	border-radius: 10px;
 	background-color: #424242;
 	float: right;
+}
+
+option.head {
+    selected:selected;
+    display:none;
+    disabled:disabled;
 }
