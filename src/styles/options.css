@@ -1,0 +1,12 @@
+body {
+  background-color: #303030;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex-direction: column;
+  width: 20vh;
+}
