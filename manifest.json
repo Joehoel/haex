@@ -19,5 +19,5 @@
     }
   ],
   "web_accessible_resources": ["src/assets/*"],
-  "permissions": ["tabs", "activeTab", "fontSettings"]
+  "permissions": ["tabs", "activeTab", "fontSettings", "storage"]
 }
