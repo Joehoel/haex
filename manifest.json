@@ -11,11 +11,14 @@
     "scripts": ["src/background.js"],
     "persistent": false
   },
+  "icons": { 
+    "626": "src/assets/logo/trlogo626x626gl.png"}
+  ,
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["src/styles/styles.css"],
-      "js": ["src/content.js"]
+      "css": ["src/styles/styles.css"]/*,
+      "js": ["src/content.js"]*/ //Fruitvirus
     }
   ],
   "web_accessible_resources": ["src/assets/*"],
