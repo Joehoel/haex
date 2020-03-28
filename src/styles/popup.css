@@ -41,9 +41,18 @@ select option:hover {
   background-color: #424242;
 }
 
-#madeby {
+.madeby {
+  font-size: 11px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1px;
+  left: 1px;
+  color: gray;
+}
+
+.buildversion {
+  font-size: 9px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
   color: gray;
 }
