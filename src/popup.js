@@ -5,9 +5,14 @@ loadHaexBtn.addEventListener("click", loadingHaex);
 
 function cleanUrl(url) {
   let clean = url.split("/")[2];
-  if (clean.length > 14) {
-    clean = clean.substr(0, 14);
-    clean += "...";
+  if (clean.length > 11) {
+    clean = clean.substr(0, 11);
+    //Als er al een punt op het laatst in de URL staat hoeven er maar twee punten achteraan
+    if(clean.endsWith('.')) {
+      clean += "..";
+    } else {
+      clean += "...";
+    }
   }
   return clean;
 }
@@ -17,7 +22,9 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
   siteName.innerHTML = cleanUrl(url);
 });
 
+//Als er op 'Hack' wordt gedrukt
 function loadingHaex() {
+  // !Hier moet nog de functie komen van de geselecteerde hacks
   chrome.tabs.executeScript({
     file: "src/startImghack.js"
   });

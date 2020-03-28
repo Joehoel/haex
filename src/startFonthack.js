@@ -10,3 +10,6 @@ const divs = document.querySelectorAll("<div>");
 divs.forEach(div => {
   div.src = "<div style='font-family: 'Oxanium', cursive;'";
 });
+
+
+//Moet nog een delay worden ingezet
