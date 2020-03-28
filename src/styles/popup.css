@@ -1,18 +1,19 @@
 body {
   font-family: "Oxanium", cursive;
-  width: 300px;
-  height: 70px;
+  width: 250px;
+  height: 135px;
   background-color: #303030;
 }
 .container {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  grid-gap: 5px 10px;
+  justify-content: start;
 }
 
 button {
   padding: 0.5rem;
-  margin: 1rem;
   font-family: "Oxanium", cursive;
   font-weight: bold;
   color: #ffffff;
@@ -20,21 +21,29 @@ button {
   border: 2px solid #03dac6;
   border-radius: 10px;
 }
-/* 
-#loadhaex {
-  margin-top: 5px;
-  width: 140px;
-  height: 60px;
+
+select {
+  width: 120px;
+  height: 79px; /*Moet worden veranderd met meer opties*/
   font-family: "Oxanium", cursive;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #424242;
+  background-color: #303030;
   border: 2px solid #03dac6;
   border-radius: 10px;
-  float: left;
-}*/
+  overflow: hidden;
+}
+
+select option {
+  color: #ffffff;
+  border-bottom: 1px solid #03dac6;
+}
+
+select option:hover {
+  background-color: #424242;
+}
 
 #madeby {
-  grid-column: span;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   color: gray;
 }
