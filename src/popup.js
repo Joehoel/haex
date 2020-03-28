@@ -3,6 +3,8 @@ const siteName = document.getElementById("siteName");
 const optionsBtn = document.querySelector("#go-to-options");
 const hacksSelector = document.querySelector("#selectedHacks");
 
+const buttons = document.querySelectorAll("button");
+
 function cleanUrl(url) {
   let clean = url.split("/")[2];
   if (clean.length > 11) {
@@ -37,7 +39,7 @@ function openOptions() {
 }
 
 function selectHack(e) {
-  selected = e.target.value;
+  selected = e.target.name;
 
   switch (selected) {
     //! Fixme
@@ -74,7 +76,11 @@ function selectHack(e) {
 // Event listeners:
 
 //? Deze misschien niet meer nodig
-loadHaexBtn.addEventListener("click", loadingHaex);
+// loadHaexBtn.addEventListener("click", loadingHaex);
 
-optionsBtn.addEventListener("click", openOptions);
-hacksSelector.addEventListener("change", selectHack);
+// optionsBtn.addEventListener("click", openOptions);
+// hacksSelector.addEventListener("change", selectHack);
+
+buttons.forEach(button => {
+  button.addEventListener("click", selectHack);
+});

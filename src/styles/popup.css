@@ -22,28 +22,39 @@ button {
   border-radius: 10px;
 }
 
-select {
+/* select {
   width: 120px;
-  height: 79px; /*Moet worden veranderd met meer opties*/
+  height: 79px;
   font-family: "Oxanium", cursive;
   background-color: #303030;
   border: 2px solid #03dac6;
   border-radius: 10px;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
 }
 
 select option {
+  padding: 1rem;
   color: #ffffff;
   border-bottom: 1px solid #03dac6;
 }
 
 select option:hover {
   background-color: #424242;
+} */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  gap: 1rem;
 }
 
 .madeby {
   font-size: 11px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 1px;
   left: 1px;
   color: gray;
