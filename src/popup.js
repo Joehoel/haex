@@ -8,7 +8,7 @@ function cleanUrl(url) {
   if (clean.length > 11) {
     clean = clean.substr(0, 11);
     //Als er al een punt op het laatst in de URL staat hoeven er maar twee punten achteraan
-    if(clean.endsWith('.')) {
+    if (clean.endsWith(".")) {
       clean += "..";
     } else {
       clean += "...";
@@ -30,7 +30,7 @@ function loadingHaex() {
   });
 }
 
-
+// Open de options pagina
 document.querySelector("#go-to-options").addEventListener("click", () => {
   if (chrome.runtime.openOptionsPage) {
     chrome.runtime.openOptionsPage();
