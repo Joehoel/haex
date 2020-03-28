@@ -45,13 +45,13 @@ function selectHack(e) {
     //! Fixme
     case "fontHack":
       chrome.tabs.executeScript({
-        file: "src/startFonthack.js"
+        file: "src/hacks/font.js"
       });
       break;
 
     case "imgHack":
       chrome.tabs.executeScript({
-        file: "src/startImghack.js"
+        file: "src/hacks/image.js"
       });
       break;
 
