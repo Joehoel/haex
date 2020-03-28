@@ -11,9 +11,12 @@
 //     /*In plaats van de URL werkt de volgende code niet: chrome.extension.getURL('src/assets/matrix2.gif')*/
 // }
 
-const images = document.querySelectorAll("img");
 
-images.forEach(image => {
-  image.src =
-    "https://media.tenor.com/images/7c37724f05ed6d2272d1eaa00d0b06a9/tenor.gif";
+chrome.storage.sync.get(['imagehackUrl'], function(result) {
+  theImageToInsert = result.imagehackUrl;
+  const images = document.querySelectorAll("img");
+  images.forEach(image => {
+    image.src = theImageToInsert;
+  });
 });
+
