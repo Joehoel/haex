@@ -1,8 +1,8 @@
 /*Het hacken kan beginnen*/
 
 //Voeg de font toe aan de pagina
-const headHTML = document.getElementsByTagName("head")[0].innerHTML;
-headHTML +=
+// const headHTML = document.getElementsByTagName("head")[0].innerHTML;
+document.head.innerHTML +=
   '<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet"/>';
 
 //! Deze line is niet nodig vgm
