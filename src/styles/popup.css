@@ -20,8 +20,12 @@ button {
   background-color: #424242;
   border: 2px solid #03dac6;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
-
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /* select {
   width: 120px;
   height: 79px;
