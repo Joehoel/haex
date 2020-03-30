@@ -58,6 +58,11 @@ function selectHack(e) {
 
       break;
 
+    case "options":
+      openOptions();
+
+      break;
+
     // TODO: Maken
     // case "loadingBarHack":
     //   chrome.tabs.executeScript({
