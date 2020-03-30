@@ -3,23 +3,22 @@
 //Voeg de font toe aan de pagina
 document.head.innerHTML += '<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet"/>';
 
+
+
 //Krijg de huidige font
-var currentFont = window.getComputedStyle(document.querySelector('body')).font-family;
+var currentFont = window.getComputedStyle(document.querySelector('body')).getPropertyValue('font-family');
 
-//Vervang elke div door een gestylde div
-(function myLoop (i) {
-  setTimeout(function () {
-    alert('hello');
-    if (--i) myLoop(i);
-  }, 3000)
-})(10);
+while(true) {  
+  document.body.style.fontFamily = "'Oxanium', cursive";
+  sleep(Math.floor((Math.random() * 2700) + 300));
+  document.body.style.fontFamily = currentFont;
+  sleep(Math.floor((Math.random() * 2700) + 300));
+}
 
-//document.body.style.fontFamily = "'Oxanium', cursive";
-//! Deze line is niet nodig vgm
-// document.getElementsByTagName("head")[0].innerHTML = headHTML;
-
-
-
-//Moet nog een delay worden ingezet
-
-//Nieuwe code:
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
