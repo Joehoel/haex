@@ -38,21 +38,24 @@ function openOptions() {
   }
 }
 
+function execute(hack) {
+  return chrome.tabs.executeScript({
+    file: `src/hacks/${hack}.js`
+  });
+}
+
 function selectHack(e) {
   selected = e.target.name;
 
   switch (selected) {
-    //! Fixme
     case "fontHack":
-      chrome.tabs.executeScript({
-        file: "src/hacks/font.js"
-      });
+      execute("font");
+
       break;
 
     case "imgHack":
-      chrome.tabs.executeScript({
-        file: "src/hacks/image.js"
-      });
+      execute("image");
+
       break;
 
     // TODO: Maken
