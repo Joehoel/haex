@@ -7,8 +7,8 @@ const buttons = document.querySelectorAll("button");
 
 function cleanUrl(url) {
   let clean = url.split("/")[2];
-  if (clean.length > 11) {
-    clean = clean.substr(0, 11);
+  if (clean.length > 22) {
+    clean = clean.substr(0, 22);
     //Als er al een punt op het laatst in de URL staat hoeven er maar twee punten achteraan
     if (clean.endsWith(".")) {
       clean += "..";
@@ -16,6 +16,7 @@ function cleanUrl(url) {
       clean += "...";
     }
   }
+  clean = "Hacking " + clean;
   return clean;
 }
 

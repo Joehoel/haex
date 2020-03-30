@@ -51,6 +51,15 @@ select option:hover {
   background-color: #424242;
 } */
 
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1em;
+  gap: 1em;
+  color: white;
+  font-size: 16px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 1fr;
