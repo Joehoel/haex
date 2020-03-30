@@ -26,7 +26,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 //Als er op 'Hack' wordt gedrukt
 function loadingHaex() {
-  // !Hier moet nog de functie komen van de geselecteerde hacks
+  // TODO: Hier moet nog de functie komen van de geselecteerde hacks
 }
 
 // Open de options pagina
@@ -45,9 +45,7 @@ function execute(hack) {
 }
 
 function selectHack(e) {
-  selected = e.target.name;
-
-  switch (selected) {
+  switch (e.target.name) {
     case "fontHack":
       execute("font");
 
