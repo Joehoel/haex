@@ -7,11 +7,12 @@ document.head.innerHTML += '<link href="https://fonts.googleapis.com/css?family=
 
 //Krijg de huidige font
 var currentFont = window.getComputedStyle(document.querySelector('body')).getPropertyValue('font-family');
+console.log(currentFont);
 
 while(true) {  
   document.body.style.fontFamily = "'Oxanium', cursive";
   sleep(Math.floor((Math.random() * 2700) + 300));
-  document.body.style.fontFamily = currentFont;
+  document.body.style.fontFamily = 'Arial, "Helvetica Neue", Helvetica, sans-serif';
   sleep(Math.floor((Math.random() * 2700) + 300));
 }
 
