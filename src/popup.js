@@ -63,11 +63,9 @@ function selectHack(e) {
       break;
 
     // TODO: Maken
-    // case "loadingBarHack":
-    //   chrome.tabs.executeScript({
-    //     file: "src/startLoadingBarHack.js"
-    //   });
-    //   break;
+    case "loadingBarHack":
+      execute("loading")
+      break;
 
     // case "optie1":
     //   chrome.tabs.executeScript({
