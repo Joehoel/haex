@@ -45,15 +45,27 @@ function execute(hack) {
   });
 }
 
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
 function selectHack(e) {
   switch (e.target.name) {
     case "fontHack":
-      execute("font");
+      // !Werkt niet
+      execute("loading");
+      setTimeout(() => execute("font"), 6500);
 
       break;
 
     case "imgHack":
-      execute("image");
+      // !Werkt niet
+      execute("loading");
+      setTimeout(() => execute("image"), 6500);
 
       break;
 
@@ -64,7 +76,7 @@ function selectHack(e) {
 
     // TODO: Maken
     case "loadingBarHack":
-      execute("loading")
+      execute("loading");
       break;
 
     // case "optie1":
