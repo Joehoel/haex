@@ -1,7 +1,5 @@
-const loadHaexBtn = document.getElementById("loadhaex");
 const siteName = document.getElementById("siteName");
 const optionsBtn = document.querySelector("#go-to-options");
-const hacksSelector = document.querySelector("#selectedHacks");
 
 const buttons = document.querySelectorAll("button");
 
@@ -25,11 +23,6 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
   siteName.innerHTML = cleanUrl(url);
 });
 
-//Als er op 'Hack' wordt gedrukt
-function loadingHaex() {
-  // TODO: Hier moet nog de functie komen van de geselecteerde hacks
-}
-
 // Open de options pagina
 function openOptions() {
   if (chrome.runtime.openOptionsPage) {
@@ -45,25 +38,15 @@ function execute(hack) {
   });
 }
 
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
-
 function selectHack(e) {
   switch (e.target.name) {
     case "fontHack":
-      // !Werkt niet
       execute("font");
       setTimeout(() => execute("font"), 6500);
 
       break;
 
     case "imgHack":
-      // !Werkt niet
       execute("image");
       setTimeout(() => execute("image"), 6500);
 
@@ -74,29 +57,18 @@ function selectHack(e) {
 
       break;
 
-    // TODO: Maken
     case "loadingBarHack":
       execute("loading");
       break;
 
-    // case "optie1":
-    //   chrome.tabs.executeScript({
-    //     file: "src/startOptie1.js"
-    //   });
-    //   break;
+    case "editPageHack":
+      execute("editpage");
+      break;
 
     default:
       break;
   }
 }
-
-// Event listeners:
-
-//? Deze misschien niet meer nodig
-// loadHaexBtn.addEventListener("click", loadingHaex);
-
-// optionsBtn.addEventListener("click", openOptions);
-// hacksSelector.addEventListener("change", selectHack);
 
 buttons.forEach(button => {
   button.addEventListener("click", selectHack);

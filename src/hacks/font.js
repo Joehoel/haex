@@ -25,3 +25,7 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 */
+
+document.head.innerHTML +=
+  '<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet"/>';
+document.body.style.fontFamily = "'Oxanium', cursive";
