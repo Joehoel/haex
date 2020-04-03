@@ -38,6 +38,8 @@ function execute(hack) {
   });
 }
 
+let editing = false;
+
 function selectHack(e) {
   switch (e.target.name) {
     case "fontHack":
@@ -63,6 +65,7 @@ function selectHack(e) {
 
     case "editPageHack":
       execute("editpage");
+      editing = !editing;
       break;
 
     default:
