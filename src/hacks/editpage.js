@@ -1,6 +1,5 @@
-console.log("Hello from editpage.js");
-
 const saveButton = document.createElement("div");
+saveButton.id = "saveButton";
 saveButton.style.position = "fixed";
 saveButton.style.zIndex = "999";
 saveButton.style.top = "0";
