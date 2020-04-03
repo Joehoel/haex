@@ -57,14 +57,14 @@ function selectHack(e) {
   switch (e.target.name) {
     case "fontHack":
       // !Werkt niet
-      execute("loading");
+      execute("font");
       setTimeout(() => execute("font"), 6500);
 
       break;
 
     case "imgHack":
       // !Werkt niet
-      execute("loading");
+      execute("image");
       setTimeout(() => execute("image"), 6500);
 
       break;
