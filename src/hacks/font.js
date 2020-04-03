@@ -1,6 +1,7 @@
 /*Het hacken kan beginnen*/
 
 //Voeg de font toe aan de pagina
+/*
 document.head.innerHTML +=
   '<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet"/>';
 
@@ -23,3 +24,4 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
+*/

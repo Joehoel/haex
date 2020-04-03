@@ -51,6 +51,49 @@ select option:hover {
   background-color: #424242;
 } */
 
+.logo {
+  width: 25px;
+  height: auto;
+  position: absolute;
+  animation: addneon 2s forwards 4s;
+}
+
+@keyframes addneon {
+  0% {filter: drop-shadow(1px 1px 0 black);}
+  100% {filter: drop-shadow(1px 1px 0 #03dac6);}
+}
+
+.logoA {
+  animation: moveA 1s forwards 1s;
+}
+
+@keyframes moveA {
+  0% {margin-left: 0;}
+  100% {margin-left: 20px;}
+}
+
+.logoE {
+  animation: moveE 1s forwards 2s;
+}
+
+@keyframes moveE {
+  0% {margin-left: 0;}
+  100% {margin-left: 40px;}
+}
+
+.logoX {
+  animation: moveX 1s forwards 3s;
+}
+
+@keyframes moveX {
+  0% {margin-left: 0;}
+  100% {margin-left: 60px;}
+}
+
+distance {
+  margin-top: 30px;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr;
