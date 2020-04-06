@@ -17,7 +17,7 @@ Daarom hebben we Heax gemaakt. Een duidelijk programma met verschillende functie
 
 # Documentatie
 
-##Hoe te installeren
+## Hoe te installeren
 
 1. Open Chrome/**Brave** (of andere Chromium browser).
 2. Ga naar `chrome://extensions`
@@ -29,5 +29,4 @@ Als het geinstalleerd is zie je als het goed is rechtsbovenaan een nieuw icoontj
 
 ---
 
-Jamaro Mooibroek & Joël Kuijper
-Copyright©
+Jamaro Mooibroek & Joël Kuijper ©
