@@ -57,6 +57,10 @@ Dit was de makkelijkste hack om te maken hoewel we er wel moeite mee hebben geha
 
 ### Loading bar
 
+De loading bar is een verplaatsbare gif. Het lijkt alsof er een programma'tje openstaat die de site hackt.
+
+<img src="https://media.giphy.com/media/oVvhEYvWDvE1G/200.gif" alt="Laadprogramma">
+
 ### Edit page
 
 Dit is een leuke en ook heel erg handige hack. Met deze hack kan je alle text op **elke** webpagina veranderen zonder element inspecteren te gebruiken.
