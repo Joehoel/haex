@@ -35,9 +35,23 @@ Wanneer je op het icoontje klikt dan krijg je dit te zien:
 
 Dit is het belangrijkste gedeelte van de extensie, hier kan je alle hacks zien die we gemaakt hebben:
 
-#### 1. Replace images
+### Replace images
 
-Dit was de eerste en ook meteen ingewikkeldste hack die we hebben gemaakt.
+Dit was de eerste en ook meteen ingewikkeldste hack die we hebben gemaakt. Het maakt gebruikt meerdere javascript bestanden. De eerste is `options.js` Dit is het bestand dat gelinkt is met de `options` pagina van de extensie, hier kan je een link van een afbeelding / GIF in zetten die dan vervolgens gebruikt wordt in de hack. Dit maakt gebruik van de gegeven functie en methodes van chrome.
+
+Het tweede bestand is `image.js` hier selecteren we alle afbeeldingen op de pagina en veranderen we de `src atribute` van alle afbeeldingen naar het ingestelde linkje.
+
+(Je kan bij de options pagina komen door in de popup op **Options** te klikken)
+
+Als je vervolgens op **Replace images** klikt vervangt de extensie alle afbeelding op de momenteel geopende webpagina naar de afbeelding de je van de voren hebt ingesteld of de standaard afbeelding.
+![Image hack](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/image-hack.png)
+
+### Change Font
+
+Deze hack veranderd het font op de momenteel geopende webpagina naar het `Oxanium (cursive)` font. Als we nog wat meer tijd hadden gehad hadden we nog een optie kunnen toevoegen dat je zelf een font kon uitkiezen.
+
+Dit was de makkelijkste hack om te maken hoewel we er wel moeite mee hebben gehad. Het plan was om de font steeds te veranderen en dan weer terug te veranderen maar dat kregen we niet aan het werk omdat de pagina dan crashte.
+![Before](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png)![After](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png)
 
 ---
 
