@@ -52,7 +52,7 @@ Deze hack veranderd het font op de momenteel geopende webpagina naar het `Oxaniu
 
 Dit was de makkelijkste hack om te maken hoewel we er wel moeite mee hebben gehad. Het plan was om de font steeds te veranderen en dan weer terug te veranderen maar dat kregen we niet aan het werk omdat de pagina dan crashte.
 
-<img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png" alt="after" width="350"/><img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png" alt="after" width="350"/>
+<img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png" alt="after" width="380"/><img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png" alt="after" width="380"/>
 
 ---
 
