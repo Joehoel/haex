@@ -54,6 +54,15 @@ Dit was de makkelijkste hack om te maken hoewel we er wel moeite mee hebben geha
 
 <img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png" alt="after" width="380"/><img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png" alt="after" width="380"/>
 
+### Loading bar
+
+### Edit page
+
+Dit is een leuke en ook heel erg handige hack. Met deze hack kan je alle text op **elke** webpagina veranderen zonder element inspecteren te gebruiken.
+![Edit](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/edit.png)
+
+Als je de hack activeert komt er een popup link bovenin waarmee je op kan klikken als je klaar bent met bewerken. Helaas gaat het wel weg als je de pagina ververst. (zulke goede hackers zijn we ook niet)
+
 ---
 
 Jamaro Mooibroek & Joël Kuijper ©
