@@ -51,7 +51,8 @@ Als je vervolgens op **Replace images** klikt vervangt de extensie alle afbeeldi
 Deze hack veranderd het font op de momenteel geopende webpagina naar het `Oxanium (cursive)` font. Als we nog wat meer tijd hadden gehad hadden we nog een optie kunnen toevoegen dat je zelf een font kon uitkiezen.
 
 Dit was de makkelijkste hack om te maken hoewel we er wel moeite mee hebben gehad. Het plan was om de font steeds te veranderen en dan weer terug te veranderen maar dat kregen we niet aan het werk omdat de pagina dan crashte.
-![Before](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png)![After](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png)
+
+<img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/before.png" alt="after" width="350"/><img src="https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/after.png" alt="after" width="350"/>
 
 ---
 
