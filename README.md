@@ -42,6 +42,7 @@ Dit was de eerste en ook meteen ingewikkeldste hack die we hebben gemaakt. Het m
 Het tweede bestand is `image.js` hier selecteren we alle afbeeldingen op de pagina en veranderen we de `src atribute` van alle afbeeldingen naar het ingestelde linkje.
 
 (Je kan bij de options pagina komen door in de popup op **Options** te klikken)
+![Options](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/options.png)
 
 Als je vervolgens op **Replace images** klikt vervangt de extensie alle afbeelding op de momenteel geopende webpagina naar de afbeelding de je van de voren hebt ingesteld of de standaard afbeelding.
 ![Image hack](https://raw.githubusercontent.com/Joehoel/haex/master/src/assets/documentation/image-hack.png)
